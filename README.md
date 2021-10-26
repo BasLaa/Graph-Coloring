@@ -29,3 +29,8 @@ Further details: https://doi.org/10.1093/comjnl/10.1.85
 ## RLF-p ##
 
 ## MCQ ##
+
+
+
+Besides implementing the algorithms, I also wrote a small game for graph colouring in JavaFX, where you can specify the size of a graph and you get a certain time to colour it.
+![Capture](https://user-images.githubusercontent.com/25391343/138945689-c47b33c9-8b79-4871-8e71-9e23ce015e48.JPG)
