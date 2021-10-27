@@ -8,7 +8,7 @@ We approximate the chromatic number by looking for upper and lower bounds.
 However, of course, the competition is only interesting because the graph coloring problem is NP-hard, meaning there is no optimal algorithm running in reasonable time.
 I will provide a brief summary of each algorithm here, with links to papers to read more deeply about them.
 
-## DSatur backtracking ##
+### DSatur backtracking ###
 The algorithm implemented here was originally proposed in 1979 by Korman and is a
 backtracking version of the DSatur algorithm. The DSatur algorithm (meaning “degree of
 saturation”) was originally proposed by the mathematician Daniel Brélaz in 1979.
@@ -31,7 +31,7 @@ state of the graph.
 
 Further details: https://dl.acm.org/doi/10.1145/359094.359101
 
-## Welsh-Powell ##
+### Welsh-Powell ###
 The first of the upper-bound algorithms is often called the Welsh-Powell (WP) algorithm, after the
 authors of the original paper. It involves ordering vertices by their
 degree and keeping track of two sets, V , which includes all uncolored vertices at the start, and
@@ -47,9 +47,9 @@ starts with the next color c+1 as the active color, until there are no uncolored
 
 Further details: https://doi.org/10.1093/comjnl/10.1.85
 
-## RLF-p ##
+### RLF-p ###
 
-## MCQ ##
+### MCQ ###
 
 
 
