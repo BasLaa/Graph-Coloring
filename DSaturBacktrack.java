@@ -72,51 +72,6 @@ public class DSaturBacktrack {
         return maxVertex;
     }
 
-    // //update of saturation degrees for colour assignment
-    // private void updateSat(int v, int c) {
-    //     ArrayList<Integer> neighboursV = GList[v];
-
-    //     //for each neighbour of v, call it w, 
-    //     //check if the new colour assigned to v (c) is already in the adjColors array for w
-    //     for (Integer w : neighboursV) {
-    //         //if that colour wasnt there yet, add it and increase saturation for w
-    //         if (!adjColors[w].contains((Integer) c)) {
-    //             adjColors[w].add((Integer) c);
-    //             saturation[w]++;
-    //         }
-    //     }
-    // }
-
-    // //update of saturation degrees for colour removal
-    // private void updateSat(int v, int originalC, int remove) {
-    //     //list of neighbours
-    //     ArrayList<Integer> neighboursV = GList[v];
-
-    //     //for each neighbour w, check if the removal of this colour impacts the saturation degree
-    //     //by looking at the neighbours of w, nw, to see if any other neighbour has this colour
-    //     //if another neighbour has this colour, it won't change saturation degree
-
-    //     for (Integer w : neighboursV) {
-    //         boolean changeSat = true;
-
-    //         ArrayList<Integer> neighboursW = GList[w];
-    //         for (Integer nw : neighboursW) {
-    //             if (colorsArray[nw] == originalC) {
-    //                 changeSat = false;
-    //                 break;
-    //             }
-    //         }
-
-    //         //if there is no other neighbour with colour originalC, decrement saturation degree
-    //         //and remove the colour from its adjacent colours
-    //         if (changeSat) {
-    //             saturation[w]--;
-    //             adjColors[w].remove((Integer) originalC);
-    //         }
-    //     }
-        
-    // }
-
     /**
      * Assigns a color to a vertex if possible, else it backtracks
      * This function is recursively called until all vertices
