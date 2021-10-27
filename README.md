@@ -48,12 +48,26 @@ starts with the next color c+1 as the active color, until there are no uncolored
 Further details: https://doi.org/10.1093/comjnl/10.1.85
 
 ### RLF-p ###
+The second upper-bound algorithm is an advanced version of the Recursive-Largest-First (RLF) algorithm. 
+Like the WP algorithm, it optimizes the greedy algorithm by ordering the vertices in a specific way. 
+However, unlike the WP algorithm, the RLF algorithm also dynamically reorders the vertices throughout
+the iterations of the algorithm. The initial ordering of vertices is determined by the degrees of the
+vertices, where the vertex with the largest degree is ranked first. Thereafter, the goal is to
+construct color classes iteratively, starting with the first color class for the first color. 
 
-### MCQ ###
+This is achieved by keeping track of three sets: set U , the set of uncolored vertices; set Cv , the set of
+vertices being assigned to color class C with first vertex v; and lastly set W , the set of uncolored
+vertices with a neighbour vertex in Cv . For each vertex v ∈ U , AU (v) and AW (v) are the
+number of neighbours it has in set U and W. Set U initially contains all vertices, whereas Cv and
+W are empty. Read more about the advanced heuristics in the link.
+
+https://doi.org/10.2298/YJOR151102003A
 
 
+## Game ##
+Besides implementing the algorithms, I also wrote a small game for graph colouring in JavaFX, where you can specify the size of a graph and
+try to colour a generated graph as well as you can. There are a few game modes to try: a timed mode, a random order mode and an optimality mode.
+Here are some screenshots of the game. You can run it using Gradle.
 
-Besides implementing the algorithms, I also wrote a small game for graph colouring in JavaFX, where you can specify the size of a graph and you get a certain time to colour it.
+![Capture](https://user-images.githubusercontent.com/25391343/138945689-c47b33c9-8b79-4871-8e71-9e23ce015e48.JPG)     ![image](https://user-images.githubusercontent.com/25391343/139054704-a36ffaa7-90b5-403f-b405-539af12bedf9.png)    ![image](https://user-images.githubusercontent.com/25391343/139054810-f7077f00-f7c2-4c27-8b4f-d56c2d7dd212.png)
 
-
-![Capture](https://user-images.githubusercontent.com/25391343/138945689-c47b33c9-8b79-4871-8e71-9e23ce015e48.JPG)
