@@ -1,6 +1,6 @@
 # Graph-Coloring #
 
-These are some of the algorithms I implemented for a graph coloring competition at Maastricht University where I came in first place.
+These are some of the algorithms I implemented for a graph coloring competition at Maastricht University where we came in first place.
 
 As a brief recap, the graph coloring problem is the problem of assigning colors to vertices in a graph, such that not two adjacent vertices (linked by an edge) have the same colour. The goal is to use as little problems as possible. The optimal (minimal) number of colors is called the chromatic number of the graph.
 We approximate the chromatic number by looking for upper and lower bounds.
